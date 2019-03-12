@@ -122,3 +122,49 @@ a {
   text-transform: uppercase;
   margin: 0 0 7px 0;
 }
+
+.timeline {
+  text-align: center;
+}
+
+.timeline > * {
+  visibility: hidden;
+}
+
+.timeline .year {
+  font-weight: bold;
+  letter-spacing: 4px;
+  font-size: 42px;
+  margin: 42px 0;
+  overflow: hidden;
+}
+
+.timeline .year::before, .timeline .year::after {
+  content: '';
+  background-color: #000000;
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.timeline .year::before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.timeline .year::after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+.timeline .text {
+  font-weight: lighter;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 28px auto;
+  max-width: 800px;
+}
+
+
