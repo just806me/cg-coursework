@@ -111,13 +111,14 @@ a {
   font-weight: lighter;
   font-size: 14px;
   line-height: 1.5;
-  margin: 1em 0;
+  margin: 14px 0;
   text-align: justify;
+  visibility: hidden;
 }
 
 .section .heading {
   font-weight: bold;
   letter-spacing: 2px;
   text-transform: uppercase;
-  margin: 0 0 0.5em 0;
+  margin: 0 0 7px 0;
 }
