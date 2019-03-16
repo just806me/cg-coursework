@@ -113,7 +113,6 @@ a {
   line-height: 1.5;
   margin: 14px 0;
   text-align: justify;
-  visibility: hidden;
 }
 
 .section .heading {
@@ -125,10 +124,6 @@ a {
 
 .timeline {
   text-align: center;
-}
-
-.timeline > * {
-  visibility: hidden;
 }
 
 .timeline .year {

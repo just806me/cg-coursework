@@ -1,6 +1,4 @@
 $(function () {
-  ScrollReveal({ duration: 800, reset: true, mobile: false })
-
   $('.header .item').on('click', function () {
     var $this = $(this), page = $this.data('page')
 
