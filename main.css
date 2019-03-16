@@ -167,4 +167,22 @@ a {
   max-width: 800px;
 }
 
+.timeline img {
+  display: block;
+  margin: 28px auto 14px auto;
+}
 
+.timeline .description {
+  font-weight: lighter;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 14px auto 28px auto;
+  max-width: 800px;
+}
+
+.timeline a.description {
+  text-decoration: underline;
+  color: inherit;
+  cursor: pointer;
+  display: block;
+}
