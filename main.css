@@ -186,3 +186,9 @@ a {
   cursor: pointer;
   display: block;
 }
+
+#mobile-image {
+  display: block;
+  margin: auto;
+  width: 480px;
+}
