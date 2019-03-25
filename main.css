@@ -122,6 +122,11 @@ a {
   margin: 0 0 7px 0;
 }
 
+.section.with-image {
+  display: flex;
+  align-items: center;
+}
+
 .timeline {
   text-align: center;
 }
