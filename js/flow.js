@@ -30,8 +30,6 @@ class Particle {
     else if (position.y < 0)
       previousPosition.y = position.y = height;
 
-    stroke(hue, 1, 1, 0.2);
-
     line(position.x, position.y, previousPosition.x, previousPosition.y);
   }
 }
@@ -57,6 +55,8 @@ function setup() {
 
 function draw() {
   background(0, 0.05);
+
+  stroke(hue, 1, 1, 0.2);
 
   for (let y = 0; y < rows; y++)
     for (let x = 0; x < cols; x++) {
