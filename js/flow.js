@@ -1,14 +1,14 @@
 class Particle {
-  velocity = createVector(0, 0);
-
-  acceleration = createVector(0, 0);
-
-  maxSpeed = 5;
-
-  hue = 0;
-
   constructor(x, y) {
     this.position = createVector(x, y);
+
+    this.velocity = createVector(0, 0);
+
+    this.acceleration = createVector(0, 0);
+
+    this.maxSpeed = 5;
+
+    this.hue = 0;
   }
 
   frame(width, height) {
