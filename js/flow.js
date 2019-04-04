@@ -1,3 +1,7 @@
+const scale = 10, particles = [], maxSpeed = 5;
+
+let cols, rows, flowfield, time = 0, hue = 0;
+
 class Particle {
   constructor(x, y) {
     this.position = createVector(x, y);
@@ -5,14 +9,10 @@ class Particle {
     this.velocity = createVector(0, 0);
 
     this.acceleration = createVector(0, 0);
-
-    this.maxSpeed = 5;
-
-    this.hue = 0;
   }
 
   frame(width, height) {
-    const { position, velocity, acceleration, maxSpeed } = this;
+    const { position, velocity, acceleration } = this;
 
     const previousPosition = position.copy();
 
@@ -30,19 +30,11 @@ class Particle {
     else if (position.y < 0)
       previousPosition.y = position.y = height;
 
-    this.hue = this.hue >= 1 ? 0 : this.hue + 0.001;
-
-    stroke(this.hue, 1, 1, 0.2);
+    stroke(hue, 1, 1, 0.2);
 
     line(position.x, position.y, previousPosition.x, previousPosition.y);
   }
 }
-
-const scale = 10, particles = [];
-
-let cols, rows, flowfield;
-
-let time = 0;
 
 function setup() {
   cols = floor(windowWidth / scale);
@@ -82,6 +74,8 @@ function draw() {
   }
 
   time += 0.001;
+
+  hue = hue >= 1 ? 0 : hue + 0.001;
 
   console.log(frameRate());
 }
