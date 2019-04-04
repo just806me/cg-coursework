@@ -76,6 +76,4 @@ function draw() {
   time += 0.001;
 
   hue = hue >= 1 ? 0 : hue + 0.001;
-
-  console.log(frameRate());
 }
