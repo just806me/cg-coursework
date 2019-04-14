@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'Museo Sans';
-  src: url('fonts/museo-sans-100.woff');
+  src: url('/fonts/museo-sans-100.woff');
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Museo Sans';
-  src: url('fonts/museo-sans-700.woff');
+  src: url('/fonts/museo-sans-700.woff');
   font-weight: 700;
   font-style: normal;
 }
